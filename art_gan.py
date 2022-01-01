@@ -26,7 +26,7 @@ IMAGE_SIZE = 128  # rows/cols
 IMAGE_CHANNELS = 3
 
 
-training_data = np.load('/spell/cubism_data.npy')
+training_data = np.load('/training_data/training_data.npy')
 
 
 def build_discriminator(image_shape):
