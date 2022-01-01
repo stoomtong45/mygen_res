@@ -20,7 +20,7 @@ NOISE_SIZE = 123
 EPOCHS = 50000  # number of iterations
 
 # Error tells me have to set 128
-BATCH_SIZE = 128
+BATCH_SIZE = None
 
 GENERATE_RES = 3
 IMAGE_SIZE = 128  # rows/cols
