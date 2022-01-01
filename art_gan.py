@@ -18,7 +18,9 @@ NOISE_SIZE = 123
 
 # Configuration
 EPOCHS = 50000  # number of iterations
-BATCH_SIZE = 64
+
+# no. of training_data files
+BATCH_SIZE = 10
 
 GENERATE_RES = 3
 IMAGE_SIZE = 128  # rows/cols
