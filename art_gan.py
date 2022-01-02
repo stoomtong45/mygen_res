@@ -2,7 +2,7 @@ from keras.layers import Input, Reshape, Dropout, Dense, Flatten, BatchNormaliza
 from keras.layers.advanced_activations import LeakyReLU
 from keras.layers.convolutional import UpSampling2D, Conv2D
 from keras.models import Sequential, Model, load_model
-from keras.optimizers import adam_v2
+from keras.optimizers import Adam
 import numpy as np
 from PIL import Image
 import os
@@ -18,8 +18,6 @@ NOISE_SIZE = 123
 
 # Configuration
 EPOCHS = 50000  # number of iterations
-
-# 
 BATCH_SIZE = 64
 
 GENERATE_RES = 3
@@ -28,7 +26,7 @@ IMAGE_SIZE = 128  # rows/cols
 IMAGE_CHANNELS = 3
 
 
-training_data = np.load('spell/training_data.npy')
+training_data = np.load('/spell/training_data.npy')
 
 
 def build_discriminator(image_shape):
@@ -133,7 +131,7 @@ def save_images(cnt, noise):
 
 image_shape = (IMAGE_SIZE, IMAGE_SIZE, IMAGE_CHANNELS)
 
-optimizer = adam_v2.Adam(1.5e-4, 0.5)
+optimizer = Adam(1.5e-4, 0.5)
 
 discriminator = build_discriminator(image_shape)
 discriminator.compile(loss="binary_crossentropy",
