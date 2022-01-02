@@ -23,7 +23,7 @@ EPOCHS = 50000  # number of iterations
 BATCH_SIZE = 64
 
 GENERATE_RES = 3
-IMAGE_SIZE = 1500  # rows/cols
+IMAGE_SIZE = 580  # rows/cols
 
 IMAGE_CHANNELS = 3
 
