@@ -8,8 +8,8 @@ from PIL import Image
 import os
 
 # Preview image Frame
-PREVIEW_ROWS = 1
-PREVIEW_COLS = 1
+PREVIEW_ROWS = 4
+PREVIEW_COLS = 7
 PREVIEW_MARGIN = 4
 SAVE_FREQ = 500
 
@@ -23,7 +23,7 @@ EPOCHS = 50000  # number of iterations
 BATCH_SIZE = 64
 
 GENERATE_RES = 3
-IMAGE_SIZE = 580  # rows/cols
+IMAGE_SIZE = 128  # rows/cols
 
 IMAGE_CHANNELS = 3
 
