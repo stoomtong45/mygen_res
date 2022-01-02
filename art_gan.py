@@ -8,8 +8,8 @@ from PIL import Image
 import os
 
 # Preview image Frame
-PREVIEW_ROWS = 1
-PREVIEW_COLS = 1
+PREVIEW_ROWS = 4
+PREVIEW_COLS = 7
 PREVIEW_MARGIN = 4
 SAVE_FREQ = 500
 
